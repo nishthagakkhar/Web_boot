@@ -1,0 +1,284 @@
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+.navbar-default
+{
+  background-color:#f0f0f0;
+  opacity: 0.75;
+  z-index: 999999;
+}
+
+.navbar-nav li a,h4{
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+.navbar-brand
+{
+ font-family: 'Lobster', cursive;
+ font-size: 20px;
+ color: black;
+ padding:12px;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#mycarousel .item
+{
+  height: 665px;
+}
+
+.slide
+{
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner .item .carousel-caption
+{
+position: absolute;
+top:300px;
+left: 250px;
+z-index: 9999;
+}
+
+.slide .backdrop
+{
+  background: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.45;
+  top:0;
+  left: 0;
+  position: absolute;
+  z-index: 99;
+}
+
+.carousel-control
+{
+  z-index: 999999;
+}
+.carousel-indicators
+{
+  z-index: 999999;
+}
+
+#slide1
+{
+  background: url('../../images/Designer.jpg') top center no-repeat;
+  background-size: cover;
+}
+.carousel-caption h2
+{
+  color: #FFFAFA;
+  z-index:9999;
+  font-family: 'Slabo 27px', serif;
+  font-size: 40px;
+  word-spacing: 9px;
+}
+
+.carousel-caption p{
+  font-size: 20px;
+}
+#slide2
+{
+  background: url('../../images/manufacturing.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+#slide3
+{
+  background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
+background-size: cover;
+}
+
+#inputMessage
+{
+  margin-bottom: 15px;
+}
+
+
+/* --------------------------------------
+   Callout
+   -------------------------------------- */
+   .well .page-header
+   {
+     margin-top: 0px;
+   }
+
+   .well .page-header h2
+   {
+     margin-top: 0px;
+   }
+   .well
+   {
+     margin: 10px;
+   }
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+.row #img1 img:hover
+{
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.row #img1 img
+{
+transition: all 0.3s ease 0s;
+margin: 0px;
+}
+
+.panel img
+{
+  background-size: cover;
+}
+
+#features
+{
+  text-align: center;
+}
+#features img
+{
+  margin: 0 0 20px;
+}
+
+footer
+{
+  background: #333;
+  color: #eee;
+  font-size: 14px;
+  padding: 20px;
+}
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+.tab-content .tab-pane  p{
+  color: black;
+}
+ul.unstyled
+{
+  list-style: none;
+  padding: 0;
+}
+
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+.thumbnails
+{
+  margin: 20px 0;
+}
+.thumbnail
+{
+  position: relative;
+}
+.thumbnail h3
+{
+  font-size: 16px;
+  margin: 0 0 10px;
+  line-height: 20px;
+}
+.thumbnail .price
+{
+  font-size: 22px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 10px;
+}
+.thumbnail .price sup {
+font-weight: normal;
+font-size: 12px;
+
+}
+
+.thumbnail span.glyphicon
+{
+  margin-right: 5px;
+}
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+.thumbnail .price
+{
+  font-size: 14px;
+}
+.thumbnail .price sup
+{
+  font-size: 10px;
+}
+#slide1
+{
+  background: url('../../images/Designer.jpg') top center no-repeat;
+  background-size: cover;
+}
+#slide2
+{
+  background: url('../../images/manufacturing.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+#slide3
+{
+  background: url('../../images/flacons-parfums-1 - Copy.jpg') top center no-repeat;
+background-size: cover;
+}
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  #slide1
+  {
+    background: url('../../images/Designer.jpg') top center no-repeat;
+    background-size: cover;
+  }
+  #slide2
+  {
+    background: url('../../images/manufacturing.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  #slide3
+  {
+    background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
+  background-size: cover;
+  }
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+  #slide1
+  {
+    background: url('../../images/Designer.jpg') top center no-repeat;
+    background-size: cover;
+  }
+  #slide2
+  {
+    background: url('../../images/manufacturing.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  #slide3
+  {
+    background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
+  background-size: cover;
+  }
+
+}
