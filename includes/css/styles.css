@@ -123,17 +123,8 @@ background-size: cover;
 /* --------------------------------------
    Layout
    -------------------------------------- */
-.row #img1 img:hover
-{
-  transform: scale(1.1);
-  opacity: 0.5;
-}
 
-.row #img1 img
-{
-transition: all 0.3s ease 0s;
-margin: 0px;
-}
+
 
 .panel img
 {
@@ -182,51 +173,75 @@ ul.unstyled
 {
   position: relative;
 }
-.thumbnail h3
-{
-  font-size: 16px;
-  margin: 0 0 10px;
-  line-height: 20px;
-}
-.thumbnail .price
-{
-  font-size: 22px;
-  position: absolute;
-  top: -10px;
-  right: -10px;
-  padding: 10px;
-}
-.thumbnail .price sup {
-font-weight: normal;
-font-size: 12px;
 
-}
 
 .thumbnail span.glyphicon
 {
   margin-right: 5px;
 }
 
+.well h4
+{
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  color: black;
+  font-size: 16px;
+  word-spacing: 5px;
+}
 
+.well h2
+{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 28px;
+  word-spacing: 5px;
+}
+.row .btn
+{
+  text-align: center;
+  color: white;
+}
+
+
+.thumbnails  h5{
+  text-align: center;
+  font-family: 'Slabo 27px', serif;
+  color: black;
+  font-size: 16px;
+  word-spacing: 2px;
+
+}
+.thumbnails h2
+{
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 20px;
+  word-spacing: 5px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-.thumbnail .price
-{
-  font-size: 14px;
-}
-.thumbnail .price sup
-{
-  font-size: 10px;
-}
+
+  .carousel-caption h2
+  {
+    color: #FFFAFA;
+    z-index:9999;
+    font-family: 'Slabo 27px', serif;
+    font-size: 10px;
+    word-spacing: 9px;
+  }
+
 #slide1
 {
-  background: url('../../images/Designer.jpg') top center no-repeat;
+  background: url('../../images/xtrasmall.jpg') top center no-repeat;
   background-size: cover;
 }
+
 #slide2
 {
   background: url('../../images/manufacturing.jpg') top center no-repeat;
@@ -245,9 +260,10 @@ background-size: cover;
 @media (max-width: 768px) {
   #slide1
   {
-    background: url('../../images/Designer.jpg') top center no-repeat;
+    background: url('../../images/small.jpg') top center no-repeat;
     background-size: cover;
   }
+
   #slide2
   {
     background: url('../../images/manufacturing.jpg') top center no-repeat;
@@ -279,6 +295,18 @@ background-size: cover;
   {
     background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
   background-size: cover;
+  }
+  .row #img1 img:hover
+  {
+    transform: scale(1.6);
+    position: relative;
+    z-index: 999999;
+  }
+  .row #img1 img
+  {
+  transition: all 0.3s ease 0s;
+  margin: 0px;
+
   }
 
 }
