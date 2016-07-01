@@ -234,18 +234,18 @@ ul .nav-tabs li
 
 #slide1
 {
-  background: url('../../images/medium.jpg') top center no-repeat;
+  background: url('../../images/imag/original_wool.jpg') top center no-repeat;
   background-size: cover;
 }
 #slide2
 {
-  background: url('../../images/manufacturing.jpg') top center no-repeat;
+  background: url('../../images/imag/original_jean.jpg') top center no-repeat;
   background-size: cover;
 }
 
 #slide3
 {
-  background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
+  background: url('../../images/imag/original_scent.jpg') top center no-repeat;
 background-size: cover;
 }
 .thumbnails  h5{
@@ -264,89 +264,44 @@ background-size: cover;
   font-size: 20px;
   word-spacing: 5px;
 }
+.carousel-caption h2
+{
+  color: #FFFAFA;
+  z-index:9999;
+  font-family: 'Slabo 27px', serif;
+  font-size: 22px;
+  word-spacing: 9px;
+}
 /* --------------------------------------
    Media Queries
    -------------------------------------- */
 
 /* Portrait & landscape phone */
-@media (max-width: 480px) {
-
-  .carousel-caption h2
-  {
-    color: #FFFAFA;
-    z-index:9999;
-    font-family: 'Slabo 27px', serif;
-    font-size: 17px;
-    word-spacing: 9px;
-  }
-
-#slide1
-{
-  background: url('../../images/Designer.jpg') top center no-repeat;
-  background-size: cover;
-}
-
-#slide2
-{
-  background: url('../../images/manufacturing.jpg') top center no-repeat;
-  background-size: cover;
-}
-
-#slide3
-{
-  background: url('../../images/flacons-parfums-1 - Copy.jpg') top center no-repeat;
-background-size: cover;
-}
-
-}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  .carousel-caption h2
-  {
-    color: #FFFAFA;
-    z-index:9999;
-    font-family: 'Slabo 27px', serif;
-    font-size: 20px;
-    word-spacing: 9px;
-  }
 
-  #slide1
-  {
-    background: url('../../images/Designer.jpg') top center no-repeat;
-    background-size: cover;
-  }
 
-  #slide2
-  {
-    background: url('../../images/manufacturing.jpg') top center no-repeat;
-    background-size: cover;
-  }
-
-  #slide3
-  {
-    background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
-  background-size: cover;
-  }
-
-}
 
 /* Large desktop */
 @media (min-width: 1200px) {
+  #mycarousel .item
+  {
+    height: 665px;
+  }
   #slide1
   {
-    background: url('../../images/Designer.jpg') top center no-repeat;
+    background: url('../../images/imag/large_wool.jpg') top center no-repeat;
     background-size: cover;
   }
   #slide2
   {
-    background: url('../../images/manufacturing.jpg') top center no-repeat;
+    background: url('../../images/imag/large_jean.jpg') top center no-repeat;
     background-size: cover;
   }
 
   #slide3
   {
-    background: url('../../images/flacons-parfums-1.jpg') top center no-repeat;
+    background: url('../../images/imag/large_scent.jpg') top center no-repeat;
   background-size: cover;
   }
   .carousel-caption h2
@@ -358,7 +313,9 @@ background-size: cover;
     word-spacing: 9px;
   }
 
-
+  .carousel-caption p{
+    font-size: 20px;
+  }
   .row #img1 img:hover
   {
     transform: scale(1.6);
@@ -371,8 +328,100 @@ background-size: cover;
   margin: 0px;
 
   }
+}
+
+@media (max-width: 768px) {
+  #mycarousel .item
+  {
+    height: 550px;
+  }
+
+  #slide1
+  {
+    background: url('../../images/imag/small_wool.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  #slide2
+  {
+    background: url('../../images/imag/small_jean.jpg') top center no-repeat;
+    background-size: cover;
+  }
+
+  #slide3
+  {
+    background: url('../../images/imag/small_scent.jpg') top center no-repeat;
+  background-size: cover;
+  }
+  .carousel-caption h2
+  {
+    color: #FFFAFA;
+    z-index:9999;
+    font-family: 'Slabo 27px', serif;
+    font-size: 18px;
+    word-spacing: 9px;
+    text-align: center;
+  }
+  .carousel-caption p{
+    font-size: 15px;
+  }
+  .carousel-inner .item .carousel-caption
+  {
+  position: absolute;
+  top:240px;
+  text-align: center;
+  z-index: 9999;
+  }
+
 
 }
+
+@media (max-width: 480px) {
+  #mycarousel .item
+  {
+    height: 450px;
+  }
+#slide1
+{
+  background: url('../../images/imag/xtrasmall_wool.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+#slide2
+{
+  background: url('../../images/imag/xtrasmall_jean.jpg') top center no-repeat;
+  background-size: cover;
+}
+
+#slide3
+{
+  background: url('../../images/imag/xtrasmall_scent.jpg') top center no-repeat;
+background-size: cover;
+}
+
+  .carousel-caption h2
+  {
+    color: #FFFAFA;
+    z-index:9999;
+    font-family: 'Slabo 27px', serif;
+    font-size: 15px;
+    word-spacing: 5px;
+  bottom: 900px;
+  }
+  .carousel-caption p{
+    font-size: 12px;
+  }
+  .carousel-inner .item .carousel-caption
+  {
+  position: absolute;
+  top:180px;
+  text-align: center;
+  z-index: 9999;
+  }
+
+}
+
+
 footer
 {
   background-color:#f0f0f0;
